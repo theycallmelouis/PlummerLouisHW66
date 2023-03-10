@@ -1,0 +1,16 @@
+<h3>Sum of two Integers</h3>
+<div id="content"></div>
+
+<script>
+  const num1 = parseInt(prompt("Enter the first number:"));
+  const num2 = parseInt(prompt("Enter the second number:"));
+
+  const sum = num1 + num2;
+
+  const sumElement = document.createElement("p");
+  sumElement.textContent = `The sum of ${num1} and ${num2} is ${sum}.`;
+  sumElement.style.color = "red";
+  sumElement.style.fontWeight = "bold";
+
+  document.getElementById("content").appendChild(sumElement);
+</script>
